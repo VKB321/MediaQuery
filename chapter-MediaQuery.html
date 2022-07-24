@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chapter-MediaQury.css">
+    <style>
+        .box{
+            font-size: 32px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+        @media (max-width: 200px){
+            #box-1{
+                display: block;
+            }
+        }   
+         @media (min-width: 200px) and (max-width: 400px){
+            #box-2{
+                display: block;
+                background-color: aqua;
+            }
+        }    
+        @media (min-width: 400px) and (max-width: 700px){
+            #box-3{
+                display: block;
+                background-color: lightgrey;
+            }
+        }    
+        @media (min-width: 700px){
+            #box-4{
+                display: block;
+                background-color: aqua;
+            }
+        }    
+        
+        </style>
+</head>
+<body>
+    <div class="box" id="box-1">mobile</div>
+    <div class="box" id="box-2">tablet</div>
+    <div class="box" id="box-3">computer</div>
+    <div class="box" id="box-4">wide screen computer</div>
+</body>
+</html>
